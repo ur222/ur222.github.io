@@ -36,7 +36,15 @@
   
   
 </head>
+
 <body>
+
+    <div class="call-back-btn" id="btn-callback-phone-icon">
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="profilepicture"><img src="assets/images/phone.png" width="100%" height="100%"></div>
+    </div>  
+
   <section class="menu cid-qVXAgKN9Pr" once="menu" id="menu1-0">
 
     
@@ -77,6 +85,54 @@
             </nav>
 </section>
 
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel" id="success-modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center" style="text-align: left;" id="success-modalLabel">Спасибо! Наш менеджер свяжется с Вами</h4>
+                <button type="button" class="close" style="float: right;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-footer">
+                <div style="text-align: center !important;">
+                    <button type="button" class="btn btn-default"  style="padding-left: 20px; padding-right: 20px;" id="success-modal-ok">OK</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="callback-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <p class="modal-title" id="myModalLabel" style="font-size: 16px; text-align: left;">Укажите номер телефона чтобы мы связались с Вами<p>
+                <button type="button" class="close" style="float: right;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div data-form-type="formoid">
+                <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта All.LawyerCentr.ru" onsubmit="$('#callback-modal').modal('hide');$('#success-modal').modal('show');">
+                    <div class="modal-body">
+                        <input type="hidden" data-form-email="true" value="HZHCvix1XCyO2ew9ZZSK5e3opQI8O0yR+aA2PWJsXAjUee3rWEScI3Y+yLJwUflozanxYPMkxfMIls6T905NrjVR//wJX8d4Svpf5cl4BMbN1309DIFJC43b2WUpyQ+J">
+                            <div class="text-center">
+                                <div class="form-group" data-for="phone">
+                                    <label class="sr-only" for="inputNumber">Телефон</label>
+                                    <input type="tel" class="form-control input-lg" style="width: 100%;" name="phone" data-form-field="Телефон" id="inputNumber5" placeholder="+7 (___) ___-__-__" required onclick="$('#inputNumber5').val('+7');">
+                                    <button type="submit" class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #E11C1C !important;">ЗАКАЗАТЬ ЗВОНОК</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group" data-for="goal">
+                                <input type="text" class="form-control input-lg" style="display: none;" name="goal" data-form-field="Причина" id="inputSite" placeholder="" value="Клиент заказал обратный звонок">
+                            </div>
+                            <div class="form-group" data-for="time">
+                                <input type="text" class="form-control input-lg" style="display: none;" name="time" data-form-field="Время у клиента" id="inputTime" placeholder="" value="">
+                            </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
 <section class="cid-qVXAtyxlCt mbr-fullscreen mbr-parallax-background" id="header2-1">
 
     
@@ -110,7 +166,7 @@
             
                                             <div class="col-md-10 col-10 text-center">
                                                 <div class="form-group" data-for="name">
-                                                    <input type="text" class="form-control" style1="padding-top:25px; padding-bottom: 25px;" name="name" data-form-field="Имя" placeholder="Имя" aria-describedby="phone-callback-1" id="inputName1" required>
+                                                    <input type="text" class="form-control" style="border-color: #d6cdcd;" name="name" data-form-field="Имя" placeholder="Имя" aria-describedby="phone-callback-1" id="inputName1" required="true">
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +176,7 @@
 
                                             <div class="col-md-10 col-10 text-center">
                                                 <div class="form-group" data-for="phone">
-                                                    <input type="tel" class="form-control" style1="padding-top:25px; padding-bottom: 25px;" name="phone" data-form-field="Телефон" placeholder="+7 (___) ___ - __ - __" aria-describedby="phone-callback-1" id="inputNumber1" required onclick="$('#inputNumber1').val('+7');">
+                                                    <input type="tel" class="form-control" style="border-color: #d6cdcd;" name="phone" data-form-field="Телефон" placeholder="+7 (___) ___ - __ - __" aria-describedby="phone-callback-1" id="inputNumber1" onclick="$('#inputNumber1').val('+7');" required="true">
                                                 </div>
                                             </div>
                                         </div>
@@ -128,8 +184,8 @@
                                         <div class="row">
                                             <div class="col-md-1 col-1"></div>
 
-                                            <div class="col-md-10 col-10 text-center">
-                                                <textarea data-aos="fade-up" class="form-control aos-init aos-animate" style="width:100%; resize: none;" rows="4" name="message" data-form-field="Сообщение" id="message" placeholder="Ваше сообщение" required=""></textarea>
+                                            <div class="col-md-10 col-10 text-center" data-for="message">
+                                                <textarea data-aos="fade-up" class="form-control aos-init aos-animate" style="width:100%; resize: none;border-color: #d6cdcd;" rows="4" name="message" data-form-field="Сообщение" id="message" placeholder="Ваше сообщение" required="true"></textarea>
                                             </div>
                                         </div>
 
@@ -137,7 +193,7 @@
                                             <div class="col-md-1 col-1"></div>
                                             <br>
                                             <div class="col-md-10 col-10" style="padding-top: 20px;;">
-                                                <a role="button" type="submit" class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #E11C1C !important;" href="">ЗАДАТЬ ВОПРОС</a>
+                                                <input role="button" type="submit" class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #E11C1C !important;" value="ЗАДАТЬ ВОПРОС">
                                                 <br><br>
                                             </div>
 
@@ -157,7 +213,7 @@
 
             <div class="col-md-6">
                 <div class="start-block">
-                    <h2 class="header-main-2"><span class="hot-line">Горячая линия:<br class="visible-xs"></span> +7 (903) 139-65-77</h2>
+                    <h2 class="header-main-2"><span class="hot-line">Горячая линия:<br class="visible-xs"></span><a class="phone-a" href="tel:+79031396577">+7 (903) 139-65-77</a></h2>
                     <p class="txt-r work-line"><i class="ent entypo-calendar color-w"></i> РАБОТАЕМ 7 ДНЕЙ В НЕДЕЛЮ</p>
                 </div>
 
@@ -176,23 +232,37 @@
                     <div class="row">
                         <div class="col-md-1 col-1"></div>
                         <div class="col-md-10 col-10" style1="padding-top: 20px;">
-                            <a class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #3368A4 !important;border: 1px solid #3368A4 !important;" href="">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+                            <input class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #3368A4 !important;border: 1px solid #3368A4 !important;" id="btn-callback-phone-free-consult" value="БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ">
                         </div>
                         <br>
                     </div>
 
-                    <div class="row">
-                            <div class="col-md-1 col-1"></div>
-                            <div class="col-md-10 col-10 text-center">
-                                <div class="callback-main">
-                                    <p class="txt-l" style="font-size: 25px;">МЫ ВАМ ПЕРЕЗВОНИМ <i class="ent entypo-phone hidden-xs"></i></p>
-                                    <div class="form-group" data-for="phone">
-                                        <input type="tel" class="form-control" style1="padding-top:25px; padding-bottom: 25px;" name="phone" data-form-field="Телефон" placeholder="+7 (___) ___ - __ - __" aria-describedby="phone-callback-1" id="inputNumber1" required onclick="$('#inputNumber1').val('+7');">
+                    <div data-form-type="formoid">
+                        <form action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта all.LawyerCentr.ru" onsubmit="$('#success-modal').modal('show');">
+                            <input type="hidden" data-form-email="true" value="HZHCvix1XCyO2ew9ZZSK5e3opQI8O0yR+aA2PWJsXAjUee3rWEScI3Y+yLJwUflozanxYPMkxfMIls6T905NrjVR//wJX8d4Svpf5cl4BMbN1309DIFJC43b2WUpyQ+J">      
+                            <div class="row">
+                                <div class="col-md-1 col-1"></div>
+                                <div class="col-md-10 col-10 text-center">
+                                    <div class="callback-main">
+                                        <p class="txt-l" style="font-size: 25px;">МЫ ВАМ ПЕРЕЗВОНИМ <i class="ent entypo-phone hidden-xs"></i></p>
+                                        
+                                        <div class="form-group" data-for="phone">
+                                            <input type="tel" class="form-control" name="phone" data-form-field="Телефон" placeholder="+7 (___) ___ - __ - __" aria-describedby="phone-callback-1" id="inputNumber2" required="true" onclick="$('#inputNumber2').val('+7');" style="border-color: #d6cdcd">
+                                        </div>
+
+                                        <input role="button" type="submit" class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #E11C1C !important;border1: 1px solid #3368A4 !important;" value="ЗАКАЗАТЬ ЗВОНОК">
+                                        <br><br>
                                     </div>
-                                    <a class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #E11C1C !important;border1: 1px solid #3368A4 !important;" href="">ЗАКАЗАТЬ ЗВОНОК</a>
-                                    <br><br>
+                                </div>
+
+                                <div data-for="goal">
+                                    <input type="text" class="form-control input-lg" style="display: none;" name="goal" data-form-field="Причина" id="inputSite10" placeholder="" value="Клиент вызывает специалиста">
+                                </div>
+                                <div data-for="time">
+                                    <input type="text" class="form-control input-lg" style="display: none;" name="time" data-form-field="Время у клиента" id="inputTime11" placeholder="" value="">
                                 </div>
                             </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -351,6 +421,200 @@
     </div>
 </section>
 
+<section class="accordion1 cid-qWePACtse1" id="accordion1-f">
+        <div class="container">
+            <div class="media-container-row">
+                <div class="col-12 col-md-10">
+                    <div class="section-head text-center space30">
+                        <h2 class="scr3-font" style="padding-bottom: 80px;">НАШИ УСЛУГИ</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="bootstrap-accordion_7" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed text-black" data-toggle="collapse" data-core="" href="#collapse1_7" aria-expanded="false" aria-controls="collapse1">
+                                    <h4 class="mbr-fonts-style display-5">
+                                        <span class="sign mbr-iconfont mbri-arrow-down inactive"></span>
+                                        СЕМЕЙНЫЕ СПОРЫ
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="collapse1_7" class="panel-collapse noScroll collapse " role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_7">
+                                <div class="panel-body p-4">
+                                    <p class="mbr-fonts-style panel-text display-7">
+                                        Юридическая компания "Правосудие" предлагает услуги юриста по семейным спорам.
+                                        <br><br>
+                                        Мы готовы помочь Вам в самых разных ситуациях:
+                                        <br>
+                                            <li>Алименты</li>
+                                            <li>Раздел имущества</li>
+                                            <li>Развод</li>
+                                            <li>Усыновление</li>
+                                            <li>Споры о детях</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-core="" href="#collapse2_7" aria-expanded="false" aria-controls="collapse2">
+                                    <h4 class="mbr-fonts-style display-5">
+                                        <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> ЖИЛИЩНЫЕ СПОРЫ
+                                   </h4>
+                                </a>
+                                
+                            </div>
+                            <div id="collapse2_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_7">
+                                <div class="panel-body p-4">
+                                    <p class="mbr-fonts-style panel-text display-7">
+                                            Юридическая компания "Правосудие" предлагает услуги юриста по жилищным спорам.
+                                            <br><br>
+                                            Мы готовы помочь Вам в самых разных ситуациях:
+                                            <br>
+                                            <li>Сопровождение сделок</li>
+                                            <li>Приватизация</li>
+                                            <li>Выселение / Вселение </li>
+                                            <li>Заливы квартир / Порча имущества</li>
+                                            <li>Споры ЖКХ</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7" aria-expanded="false" aria-controls="collapse3">
+                                    <h4 class="mbr-fonts-style display-5">
+                                        <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> НАСЛЕДСТВЕННЫЕ И ЗЕМЕЛЬНЫЕ СПОРЫ
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="collapse3_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_7">
+                                <div class="panel-body p-4">
+                                    <p class="mbr-fonts-style panel-text display-7">
+                                            Юридическая компания "Правосудие" предлагает услуги юриста по наследственным и земельным спорам.
+                                            <br><br>
+                                            Мы готовы помочь Вам в самых разных ситуациях:
+                                            <br>
+                                            <li>Решение проблем с наследством</li>
+                                            <li>Оспаривание завещаний</li>
+                                            <li>Помощь в сделках с землей</li>
+                                            <li>Споры о границах земельных участков</li>   
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" role="tab" id="heading4">
+                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-4" aria-expanded="false" aria-controls="collapse3">
+                                        <h4 class="mbr-fonts-style display-5">
+                                            <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> ЗАЩИТА ПРАВ ПОТРЕБИТЕЛЕЙ
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="collapse3_7-4" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#bootstrap-accordion_7">
+                                    <div class="panel-body p-4">
+                                        <p class="mbr-fonts-style panel-text display-7">
+                                            Юридическая компания "Правосудие" предлагает услуги юриста по вопросам защиты прав потребителей.
+                                            <br><br>
+                                            Мы готовы помочь Вам в самых разных ситуациях:
+                                            <br>
+                                            <li>Возврат комиссий по кредитам</li>
+                                            <li>Взыскание неустойки</li>
+                                            <li>Возврат некачеств. товара</li>
+                                            <li>Расторжение договоров и взыскание денежных средств</li>
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" role="tab" id="heading5">
+                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-5" aria-expanded="false" aria-controls="collapse3">
+                                        <h4 class="mbr-fonts-style display-5">
+                                            <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> АВТОЮРИСТ / ДТП / СТРАХОВКА
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="collapse3_7-5" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#bootstrap-accordion_7">
+                                    <div class="panel-body p-4">
+                                        <p class="mbr-fonts-style panel-text display-7">
+                                                Юридическая компания "Правосудие" предлагает услуги автоюриста.
+                                                <br><br>
+                                                Мы готовы помочь Вам в самых разных ситуациях:
+                                                <br>
+                                                <li>Взыскание выплат по ДТП</li>
+                                                <li>Взыскание УТС</li>
+                                                <li>Переоценка ущерба ДТП</li>
+                                                <li>Оспаривание виновности в ДТП</li>
+                                                <li>Оспаривание штрафов</li>
+                                                <li>Оспаривание фотофиксации</li>
+                                                <li>Оспаривание лишения прав</li>
+                                                <li>Взыскание ущерба, причиненного ГИБДД</li>
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" role="tab" id="heading6">
+                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-6" aria-expanded="false" aria-controls="collapse3">
+                                        <h4 class="mbr-fonts-style display-5">
+                                            <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> ТРУДОВЫЕ СПОРЫ
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="collapse3_7-6" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#bootstrap-accordion_7">
+                                    <div class="panel-body p-4">
+                                        <p class="mbr-fonts-style panel-text display-7">
+                                                Юридическая компания "Правосудие" предлагает услуги юриста по трудовым спорам.
+                                                <br><br>
+                                                Мы готовы помочь Вам в самых разных ситуациях:
+                                                <br>
+                                                <li>Оспаривание взысканий</li>
+                                                <li>Оспаривание записей в трудовой книжке</li>
+                                                <li>Взыскание зарплаты</li>
+                                                <li>Восстановление на работе</li>
+                                                <li>Несчастные случаи на производстве</li>
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+
+
+                        <div class="card">
+                                <div class="card-header" role="tab" id="heading7">
+                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-7" aria-expanded="false" aria-controls="collapse3">
+                                        <h4 class="mbr-fonts-style display-5">
+                                            <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> АРБИТРАЖ
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="collapse3_7-7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading7" data-parent="#bootstrap-accordion_7">
+                                    <div class="panel-body p-4">
+                                        <p class="mbr-fonts-style panel-text display-7">
+                                                Юридическая компания "Правосудие" предлагает услуги юриста по судебным спорам.
+                                                <br><br>
+                                                Мы готовы помочь Вам в самых разных ситуациях:
+                                                <br>
+                                                <li>Взыскание долгов</li>
+                                                <li>Взыскание убытков</li>
+                                                <li>Взыскание упущенной выгоды</li>
+                                                <li>Признание сделки недействительной</li>
+                                                <li>и прочее</li>
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <section class="section-map" >
     <div class="col-md-12">
       <div class="row">
@@ -475,6 +739,7 @@
   <script src="assets/mbr-tabs/mbr-tabs.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/js/script.js"></script>
   
   
 </body>
