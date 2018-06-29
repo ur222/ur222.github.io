@@ -27,10 +27,10 @@
     
         DG.then(function () {
             map = DG.map('map', {
-                center: [55.761881, 37.633850],
+                center: [55.761592, 37.634452],
                 zoom: 18
             });
-            DG.popup().setLatLng(map.getCenter()).setContent('<b>Юридическая Компания "Правосудие"</b><br><b style="color:lightgray;"><br>Запись по тел. +7 (965) 444-20-21<br>+7 (965) 444-20-14<br>Отдел контроля +7 (903) 139-65-77</b><br><br><p style="color:yellow;">Москва, ул.Мясницкая д.22 стр.1</p>').openOn(map);
+            DG.popup().setLatLng(map.getCenter()).setContent('<b>Юридическая Компания "Правосудие"</b><br><b style="color:lightgray;"><br>Запись по тел. +7 (965) 444-20-21<br>+7 (965) 444-20-14<br>Отдел контроля +7 (903) 139-65-77</b><br><br><p style="color:yellow;">Москва, Кривоколенный переулок д.5 стр.4, 1 этаж офис 120</p>').openOn(map);
         });
     </script> 
   
@@ -74,11 +74,14 @@
                                 Консультация</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link text-white display-4" href="#"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span>
+                            <a class="nav-link link text-white display-4" href="#tabs2-9"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span>
                                 Услуги&nbsp;</a>
-                        </li><li class="nav-item"><a class="nav-link link text-white display-4" href="#"><span class="mbri-chat mbr-iconfont mbr-iconfont-btn"></span>
-                                Отзывы</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#"><span class="mbri-briefcase mbr-iconfont mbr-iconfont-btn"></span>
-                                Сотрудничество</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="#"><span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>
+                        </li><li class="nav-item">
+                            <a class="nav-link link text-white display-4" href="#testimonials-slider1-c"><span class="mbri-chat mbr-iconfont mbr-iconfont-btn"></span>
+                                Отзывы</a>
+                            
+                            </li>
+                            <li class="nav-item"><a class="nav-link link text-white display-4" href="#map-contacts"><span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>
                                 Контакты</a></li></ul>
                     
                 </div>
@@ -213,7 +216,7 @@
 
             <div class="col-md-6">
                 <div class="start-block">
-                    <h2 class="header-main-2"><span class="hot-line">Горячая линия:<br class="visible-xs"></span><a class="phone-a" href="tel:+79031396577">+7 (903) 139-65-77</a></h2>
+                    <h2 class="header-main-2"><span class="hot-line">Горячая линия:<br class="visible-xs"></span><a class="phone-a" href="tel:+79654442021">+7 (965) 444-20-21</a></h2>
                     <p class="txt-r work-line"><i class="ent entypo-calendar color-w"></i> РАБОТАЕМ 7 ДНЕЙ В НЕДЕЛЮ</p>
                 </div>
 
@@ -288,28 +291,30 @@
 
         <div class="media-container-row">
             <div class="col-10 col-md-3 scr2-icon-background">
-                <div class="scr2-icon-border" >    
+                <div class="scr2-icon-border" id="shilizh">    
                     <div class="entypo-home scr2-icon"></div>
                     <p class="src2-icon-p">ЖИЛИЩНЫЕ СПОРЫ</p>
                 </div>
             </div>
 
             <div class="col-10 col-md-3">
-                <div class="scr2-icon-border" >    
+                <!-- <a href="#heading7"> -->
+                <div class="scr2-icon-border" id="family">    
                     <div class="entypo-users scr2-icon"></div>
                     <p class="src2-icon-p">СЕМЕЙНЫЕ СПОРЫ</p>
                 </div>
+                <!-- </a> -->
             </div>
 
             <div class="col-10 col-md-3">
-                <div class="scr2-icon-border" >    
+                <div class="scr2-icon-border" id="nasledstv_spor">    
                     <div class="entypo-text-document scr2-icon"></div>
                     <p class="src2-icon-p">НАСЛЕДСТВЕННЫЕ СПОРЫ</p>
                 </div>
             </div>
 
             <div class="col-10 col-md-3">
-                <div class="scr2-icon-border" >    
+                <div class="scr2-icon-border" id="trud_spor">    
                     <div class="entypo-attachment scr2-icon"></div>
                     <p class="src2-icon-p">ТРУДОВЫЕ СПОРЫ</p>
                 </div>
@@ -318,28 +323,28 @@
         <br>
         <div class="media-container-row">
             <div class="col-10 col-md-3">
-                <div class="scr2-icon-border" >    
+                <div class="scr2-icon-border" id="auto_your">    
                     <div class="fa fa-car scr2-icon2"></div>
                     <p class="src2-icon-p">АВТОЮРИСТ / ДТП</p>
                 </div>
             </div>
 
             <div class="col-10 col-md-3">
-                <div class="scr2-icon-border" >    
+                <div class="scr2-icon-border" id="zashit_prav">    
                     <div class="entypo-shopping-cart scr2-icon"></div>
                     <p class="src2-icon-p">ЗАЩИТА ПРАВ ПОТРЕБИТЕЛЕЙ</p>
                 </div>
             </div>
 
             <div class="col-10 col-md-3">
-                <div class="scr2-icon-border" >    
+                <div class="scr2-icon-border" id="zemel_spor">    
                     <div class="entypo-tree scr2-icon"></div>
                     <p class="src2-icon-p">ЗЕМЕЛЬНЫЕ СПОРЫ</p>
                 </div>
             </div>
 
             <div class="col-10 col-md-3">
-                <div class="scr2-icon-border" >    
+                <div class="scr2-icon-border" id="arbitrash">    
                     <div class="entypo-briefcase scr2-icon"></div>
                     <p class="src2-icon-p">АРБИТРАЖ</p>
                 </div>
@@ -430,9 +435,9 @@
                     </div>
                     <div class="clearfix"></div>
                     <div id="bootstrap-accordion_7" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
-                        <div class="card">
+                        <div class="card" id="family_questions">
                             <div class="card-header" role="tab" id="headingOne">
-                                <a role="button" class="panel-title collapsed text-black" data-toggle="collapse" data-core="" href="#collapse1_7" aria-expanded="false" aria-controls="collapse1">
+                                <a id="familyBtn" role="button" class="panel-title collapsed text-black" data-toggle="collapse" data-core="" href="#collapse1_7" aria-expanded="false" aria-controls="collapse1">
                                     <h4 class="mbr-fonts-style display-5">
                                         <span class="sign mbr-iconfont mbri-arrow-down inactive"></span>
                                         СЕМЕЙНЫЕ СПОРЫ
@@ -457,7 +462,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab" id="headingTwo">
-                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-core="" href="#collapse2_7" aria-expanded="false" aria-controls="collapse2">
+                                <a role="button" id="shilizhBtn" class="collapsed panel-title text-black" data-toggle="collapse" data-core="" href="#collapse2_7" aria-expanded="false" aria-controls="collapse2">
                                     <h4 class="mbr-fonts-style display-5">
                                         <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> ЖИЛИЩНЫЕ СПОРЫ
                                    </h4>
@@ -482,7 +487,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header" role="tab" id="headingThree">
-                                <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7" aria-expanded="false" aria-controls="collapse3">
+                                <a role="button" id="nasledBtn" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7" aria-expanded="false" aria-controls="collapse3">
                                     <h4 class="mbr-fonts-style display-5">
                                         <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> НАСЛЕДСТВЕННЫЕ И ЗЕМЕЛЬНЫЕ СПОРЫ
                                     </h4>
@@ -506,7 +511,7 @@
 
                         <div class="card">
                                 <div class="card-header" role="tab" id="heading4">
-                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-4" aria-expanded="false" aria-controls="collapse3">
+                                    <a role="button" id="zashitBtn" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-4" aria-expanded="false" aria-controls="collapse3">
                                         <h4 class="mbr-fonts-style display-5">
                                             <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> ЗАЩИТА ПРАВ ПОТРЕБИТЕЛЕЙ
                                         </h4>
@@ -530,7 +535,7 @@
 
                         <div class="card">
                                 <div class="card-header" role="tab" id="heading5">
-                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-5" aria-expanded="false" aria-controls="collapse3">
+                                    <a role="button" id="autoBtn" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-5" aria-expanded="false" aria-controls="collapse3">
                                         <h4 class="mbr-fonts-style display-5">
                                             <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> АВТОЮРИСТ / ДТП / СТРАХОВКА
                                         </h4>
@@ -558,7 +563,7 @@
 
                         <div class="card">
                                 <div class="card-header" role="tab" id="heading6">
-                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-6" aria-expanded="false" aria-controls="collapse3">
+                                    <a role="button" id="trudBtn" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-6" aria-expanded="false" aria-controls="collapse3">
                                         <h4 class="mbr-fonts-style display-5">
                                             <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> ТРУДОВЫЕ СПОРЫ
                                         </h4>
@@ -584,7 +589,7 @@
 
                         <div class="card">
                                 <div class="card-header" role="tab" id="heading7">
-                                    <a role="button" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-7" aria-expanded="false" aria-controls="collapse3">
+                                    <a role="button" id="arbitrashBtn" class="collapsed text-black panel-title" data-toggle="collapse" data-core="" href="#collapse3_7-7" aria-expanded="false" aria-controls="collapse3">
                                         <h4 class="mbr-fonts-style display-5">
                                             <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> АРБИТРАЖ
                                         </h4>
@@ -615,7 +620,7 @@
         </div>
     </section>
 
-<section class="section-map" >
+<section class="section-map" id="map-contacts">
     <div class="col-md-12">
       <div class="row">
           <body>
@@ -626,21 +631,16 @@
 </section>
 
 <section class="footer3 cid-qVXMJJNF5Z" id="footer3-d">
-
-    
-
-    
-
-    <div class="container">
+    <div class="container-fluid">
         <div class="media-container-row content">
-            <div class="col-md-2 col-sm-4">
+            <div class="col-md-2">
                 <div class="mb-3 img-logo">
                     <a href="#">
                          <img src="assets/images/logo2.png" alt="ПРАВОСУДИЕ">
                     </a>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-2">
                 <p class="mb-4 mbr-fonts-style foot-title display-7">
                     Консультация
                 </p>
@@ -652,7 +652,7 @@
                     <br><a href="#" class1="text-black">Семейные споры</a>
                 </p>
             </div>
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-2">
                 <p class="mb-4 mbr-fonts-style foot-title display-7 hidden-xs">
                     &nbsp;
                 </p>
@@ -664,7 +664,18 @@
                     <br><a href="#" class1="text-black">Миграционные споры</a>
                 </p>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-3">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    Запись по телефону
+                </p>
+                <p class="mbr-text form-text mbr-fonts-style display-7">
+                    <span class="callback-span"><i class="fa fa-phone fa-big2 fa-wh"></i>&nbsp;&nbsp;<a class="phone-a" href="tel:+79654442021">+7 (965) 444-20-21</a></span><br>
+                    <span class="callback-span"><i class="fa fa-phone fa-big2 fa-wh"></i>&nbsp;&nbsp;<a class="phone-a" href="tel:+79654442014">+7 (965) 444-20-14</a></span><br>
+                    <span class="callback-span"><i class="fa fa-phone fa-big2 fa-wh"></i>&nbsp;&nbsp;<a class="phone-a" href="tel:+79031396577">+7 (903) 139-65-77</a></span><br>
+                    <span class="callback-span"><i class="fa fa-envelope fa-big2 fa-env" aria-hidden="true"></i>&nbsp;&nbsp;<a class="phone-a" href="email:control@lawyercentr.ru">control@lawyercentr.ru</a></span><br>
+                </p>
+            </div>
+            <div class="col-md-3">
                 <p class="mb-4 mbr-fonts-style foot-title display-7">
                     Бесплатная консультация юриста
                 </p>

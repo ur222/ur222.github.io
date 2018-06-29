@@ -2111,7 +2111,8 @@ body {
   font-size: 20px;
 }
 .fa-big {
-	font-size: 30px;
+	font-size: 30px !important;
+  text-shadow: 1px 1px black;
 }
 
 .fa-big2 {
@@ -2502,6 +2503,15 @@ a.phone-a {
     margin-bottom: 20px;
   }
 
+  .scr2-icon-border:hover {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    min-height: 270px;
+    background-color: rgba(45, 87, 134, 0.2);
+    margin-bottom: 20px;
+  }
+
   .scr2-icon {
     font-size: 120px;
     color: white;
@@ -2628,6 +2638,15 @@ a.phone-a {
     border-radius: 8px;
     min-height: 270px;
     background-color: rgba(45, 87, 134, 0.7);
+  }
+
+  .scr2-icon-border:hover {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    min-height: 270px;
+    background-color: rgba(45, 87, 134, 0.2);
+    cursor: pointer;
   }
 
   .scr2-icon {

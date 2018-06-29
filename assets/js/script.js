@@ -8,6 +8,54 @@ $(document).ready(function() {
       $("#inputSite").val('Клиент заказал обратный звонок');
     });
 
+    $("#family").on("click", function(){
+      document.getElementById('familyBtn').click();
+      location.href = "#headingOne";
+      window.scrollBy(0, -70);
+    });
+
+    $("#shilizh").on("click", function(){
+      document.getElementById('shilizhBtn').click();
+      location.href = "#headingTwo";
+      window.scrollBy(0, -70);
+    });
+
+    $("#nasledstv_spor").on("click", function(){
+      document.getElementById('nasledBtn').click();
+      location.href = "#headingThree";
+      window.scrollBy(0, -70);
+    });
+    
+    $("#trud_spor").on("click", function(){
+      document.getElementById('trudBtn').click();
+      location.href = "#heading6";
+      window.scrollBy(0, -70);
+    });
+    
+    $("#auto_your").on("click", function(){
+      document.getElementById('autoBtn').click();
+      location.href = "#heading5";
+      window.scrollBy(0, -70);
+    });
+    
+    $("#zashit_prav").on("click", function(){
+      document.getElementById('zashitBtn').click();
+      location.href = "#heading4";
+      window.scrollBy(0, -70);
+    });
+    
+    $("#zemel_spor").on("click", function(){
+      document.getElementById('nasledBtn').click();
+      location.href = "#headingThree";
+      window.scrollBy(0, -70);
+    });
+    
+    $("#arbitrash").on("click", function(){
+      document.getElementById('arbitrashBtn').click();
+      location.href = "#heading7";
+      window.scrollBy(0, -70);
+    });
+
     $("#btn-callback-carousel-ok").on("click", function(){
       $("#callback-modal").modal('hide');
     });
