@@ -2553,11 +2553,29 @@ a.phone-a {
 		cursor: pointer;
 		opacity: 0.7;
 		z-index: 99990;
-	}
+  }
+  
+  .map-frame {
+    display: none;
+  }
 }
 
 /* MD */
 @media (min-width: 768px) {
+.map-frame {
+		display: block;
+		position: absolute;
+		top: 80px;
+		right: 80px;
+		width: 250px;
+		height: 395px;
+		padding: 15px;
+		background: #fff;
+		border: 5px #1465dd solid;
+    border-radius: 5px;
+    line-height: 1.2;
+	}
+
   .call-back-btn {
 		position: fixed;
 		right: 50px;
@@ -2687,5 +2705,9 @@ a.phone-a {
     color: rgb(251, 255, 0);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgb(76, 0, 255);
+  }
+
+  .cid-qVXMoHuKFJ {
+    min-height: 501px;
   }
 }
