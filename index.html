@@ -188,7 +188,8 @@
 
     
 
-    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(15, 118, 153);"></div>
+    <!-- <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(15, 118, 153);"></div> -->
+    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
 
     <div class="container align-center">
         <div class="row">
@@ -208,7 +209,7 @@
                                         <div class="row">
                                             <div class="col-md-1 col-1"></div>
                                             <div class="col-md-10 col-10">
-                                                <p style="font-size: 25px; text-align: center;">ВАШ ВОПРОС К ЮРИСТУ</p>
+                                                <p style="font-size: 25px; text-align: left;">ВОПРОС № <span id="question-number"></span></p>
                                             </div>
                                         </div>
                                         
@@ -236,7 +237,7 @@
                                             <div class="col-md-1 col-1"></div>
 
                                             <div class="col-md-10 col-10 text-center" data-for="message">
-                                                <textarea data-aos="fade-up" class="form-control aos-init aos-animate" style="width:100%; height: 124.2px;resize: none;border-color: #d6cdcd;" name="message" data-form-field="Сообщение" id="message" placeholder="Ваш вопрос" required="true"></textarea>
+                                                <textarea data-aos="fade-up" class="form-control aos-init aos-animate" style="width:100%; height: 124.2px;resize: none;border-color: #d6cdcd;" name="message" data-form-field="Сообщение" id="message" placeholder="Ваш вопрос к юристу" required="true"></textarea>
                                             </div>
                                         </div>
 
@@ -276,7 +277,7 @@
                             <p class="free-consulting" style="font-size: 25px;">ОСТАЛОСЬ БЕСПЛАТНЫХ КОНСУЛЬТАЦИЙ НА СЕГОДНЯ:</p>
                         </div>
                         <div class="col-md-1 col-2">
-                            <p class="free-consulting-num" style="font-size: 55px;text-align: center !important;padding: 0;margin:0px;font-weight: bold; color:#E11C1C;">8</p>
+                            <p class="free-consulting-num" id="free-consulting-value" style="font-size: 55px;text-align: center !important;padding: 0;margin:0px;font-weight: bold; color:#E11C1C;position: absolute;left:-30px;"></p>
                         </div>
                     </div>
 
@@ -759,7 +760,7 @@
             <div class="media-container-row">
                 <div class="col-sm-6 copyright">
                     <p class="mbr-text mbr-fonts-style display-7">
-                        © 2018 Юридическая Компания "Правосудие"
+                        © 2018 Юридическая Компания "Правосудие"<br>Все права защищены.
                     </p>
                 </div>
                 <div class="col-md-6">

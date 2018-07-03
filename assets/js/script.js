@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    function getRandom(length) {
+      return Math.floor(Math.pow(10, length-1) + Math.random() * 9 * Math.pow(10, length-1));
+    }
+
+    document.getElementById('question-number').innerHTML=getRandom(6);
     $("#btn-callback-phone-free-consult").on("click", function(){
         $("#callback-modal").modal('show');
         $("#inputSite").val('Клиент заказал обратный звонок');
@@ -83,9 +88,32 @@ $(document).ready(function() {
         $('#inputTime').val(d + '-' + m + '-' + y + ' ' + h + ':' + min);
         $('#inputTime2').val(d + '-' + m + '-' + y + ' ' + h + ':' + min);
         $('#inputTime3').val(d + '-' + m + '-' + y + ' ' + h + ':' + min);
+        console.log(h);
+
+        if (h <= 8) {
+          var consultNum = 30;
+        } else if (h <= 10) {
+          var consultNum = 26;
+        } else if (h <= 12) {
+          var consultNum = 22;
+        } else if (h <= 14) {
+          var consultNum = 18;
+        } else if (h <= 16) {
+          var consultNum = 15;
+        } else if (h <= 18) {
+          var consultNum = 9;
+        } else if (h <= 20) {
+          var consultNum = 7;
+        } else if (h <= 22) {
+          var consultNum = 5;
+        } else if (h <= 23) {
+          var consultNum = 3;
+        }
+
+        document.getElementById('free-consulting-value').innerHTML = consultNum;
       };
       getDateNow();
-    }, 5000);
+    }, 1000);
   });
 
   $(document.body).on('hide.bs.modal,hidden.bs.modal', function () {
