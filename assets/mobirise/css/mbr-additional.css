@@ -2436,6 +2436,37 @@ a.phone-a {
     border-radius: 10px;
   }
 
+  .scores-p {
+    font-size: 17px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .scores-year {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: white !important;
+    text-shadow: 1px 1px 1px black !important;
+  }
+
+  .scores-big {
+    text-align: center; 
+    color: white; 
+    font-size: 55px;
+    text-shadow: 1px 1px 1px black !important;
+  }
+
+  .scores-block {
+    background: url('../../images/scores.jpg') no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+
 /* XS */
 @media (max-width: 767px) {
   .profilepicture {
@@ -2581,6 +2612,12 @@ a.phone-a {
     padding-top: 100px;
     padding-bottom: 30px;
   }
+
+  .scores-year {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
 }
 
 /* MD */
@@ -2588,6 +2625,11 @@ a.phone-a {
   
 .clients-feedback {
   padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+.scores-year {
+  padding-top: 70px;
   padding-bottom: 50px;
 }
 
