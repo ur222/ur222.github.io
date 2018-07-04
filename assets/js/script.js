@@ -73,6 +73,26 @@ $(document).ready(function() {
       $("#success-modal").modal('hide');
     });
 
+    $("#question-underBtn").on("click", function(){
+      window.open('#','_blank');
+    });
+
+    $("#question-underBtn2").on("click", function(){
+      window.open('#','_blank');
+    });
+
+    $("#question-underBtn3").on("click", function(){
+      window.open('#','_blank');
+    });
+
+    $("#question-underBtn4").on("click", function(){
+      window.open('#','_blank');
+    });
+
+    $("#write_feedback").on("click", function(){
+      $("#feedback-modal").modal('show');
+    });
+
     window.setInterval(function() {
       function getDateNow() {
         var n =  new Date();
@@ -107,7 +127,7 @@ $(document).ready(function() {
         } else if (h <= 22) {
           var consultNum = 5;
         } else if (h <= 23) {
-          var consultNum = 3;
+          var consultNum = 0;
         }
 
         document.getElementById('free-consulting-value').innerHTML = consultNum;

@@ -2084,6 +2084,7 @@ body {
 .header-main-1 {
   color: white;
   text-shadow: 1px 1px 1px #000000;
+  padding-top: 50px;
 }
 
 .color-w {
@@ -2558,10 +2559,34 @@ a.phone-a {
   .map-frame {
     display: none;
   }
+
+  .underBtn {
+    line-height: 1;
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: gray;
+  }
 }
 
 /* MD */
 @media (min-width: 768px) {
+.underBtn {
+  line-height: 1;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: gray;
+}
+
+.user_text {
+  min-height: 200px;
+}
+
 .map-frame {
 		display: block;
 		position: absolute;
@@ -2615,6 +2640,7 @@ a.phone-a {
 
   .cid-qVXM4slBGl {
     min-height: 100vh;
+    padding-top: 80px;
   }
 
   h2 {
@@ -2699,6 +2725,7 @@ a.phone-a {
     color: white;
     text-shadow: 1px 1px 1px #000000;
     text-align: right;
+    padding-top: 50px;
   }
 
   .work-line {
