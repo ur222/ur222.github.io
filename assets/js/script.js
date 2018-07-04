@@ -12,6 +12,10 @@ $(document).ready(function() {
       $("#callback-modal").modal('show');
       $("#inputSite").val('Клиент заказал обратный звонок');
     });
+    $("#call-back-last").on("click", function(){
+      $("#callback-modal").modal('show');
+      $("#inputSite").val('Клиент заказал обратный звонок');
+    });
 
     $("#family").on("click", function(){
       document.getElementById('familyBtn').click();

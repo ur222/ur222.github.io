@@ -2467,8 +2467,66 @@ a.phone-a {
     padding-bottom: 50px;
   }
 
+  .free-consult-block {
+    background-color: white;
+    border-top: 1px solid #E11C1C;
+    border-bottom: 1px solid #E11C1C;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .free-consult-h2 {
+    color: #232323 !important;
+    text-shadow: none !important;
+    font-weight: normal !important;
+  }
+
+  .why-we {
+    background-color: #f2f2f2;
+    padding-bottom: 80px;
+  }
+
+  .why-we-h2 {
+    color: #232323 !important;
+    text-shadow: none !important;
+    padding-bottom: 60px;
+  }
+
+  .why-we-border {
+    text-align: center;
+    border: 2px solid rgba(45, 87, 134, 1);
+    border-radius: 5px;
+    min-height: 300px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+
+  .why-we-icon-p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #232323 !important;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .why-we-icon {
+    font-size: 100px !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
 /* XS */
 @media (max-width: 767px) {
+  .why-we-icon-p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #232323 !important;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .profilepicture {
 		width: 60px;
 		height: 60px;
@@ -2621,8 +2679,7 @@ a.phone-a {
 }
 
 /* MD */
-@media (min-width: 768px) {
-  
+@media (min-width: 768px) { 
 .clients-feedback {
   padding-top: 180px;
   padding-bottom: 50px;
