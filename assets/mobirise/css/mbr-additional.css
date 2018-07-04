@@ -2428,6 +2428,13 @@ a.phone-a {
     background-color: #f2f2f2 !important;
   }
 
+  .img-clients-feedback {
+    margin-bottom: 30px;
+    /* border: 5px solid #2D5786; */
+    border: 5px solid #FDD02B;
+    /* border: 5px solid #E11C1C; */
+    border-radius: 10px;
+  }
 
 /* XS */
 @media (max-width: 767px) {
@@ -2569,10 +2576,21 @@ a.phone-a {
     padding-bottom: 8px;
     color: gray;
   }
+
+  .clients-feedback {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
 }
 
 /* MD */
 @media (min-width: 768px) {
+  
+.clients-feedback {
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
 .underBtn {
   line-height: 1;
   text-decoration: underline;
